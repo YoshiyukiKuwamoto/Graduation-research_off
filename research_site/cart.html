@@ -1,0 +1,250 @@
+```html
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- スマートフォン表示用 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart | LUNÉ</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- 共通CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+         Header
+    ========================== -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            LUNÉ
+        </a>
+
+
+        <nav class="header-nav">
+
+            <a href="products.html">
+                PRODUCTS
+            </a>
+
+            <a href="cart.html" class="cart-link">
+                CART
+                <span class="cart-count">0</span>
+            </a>
+
+        </nav>
+
+
+        <button class="menu-button" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+
+
+    <!-- =========================
+         Main
+    ========================== -->
+
+    <main>
+
+        <!-- =========================
+             Cart Header
+        ========================== -->
+
+        <section class="cart-header">
+
+            <p class="section-label">
+                SHOPPING
+            </p>
+
+            <h1>
+                CART
+            </h1>
+
+        </section>
+
+
+
+        <!-- =========================
+             Cart Contents
+        ========================== -->
+
+        <section class="cart-section">
+
+            <!--
+                JavaScriptによって
+                カートの商品をここに表示
+            -->
+
+            <div id="cart-items"></div>
+
+
+            <!-- =====================
+                 Cart Summary
+            ====================== -->
+
+            <div class="cart-summary">
+
+                <div class="summary-row">
+
+                    <span>
+                        SUBTOTAL
+                    </span>
+
+                    <span id="cart-subtotal">
+                        ¥0
+                    </span>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        SHIPPING
+                    </span>
+
+                    <span id="cart-shipping">
+                        ¥0
+                    </span>
+
+                </div>
+
+
+                <div class="summary-total">
+
+                    <span>
+                        TOTAL
+                    </span>
+
+                    <span id="cart-total">
+                        ¥0
+                    </span>
+
+                </div>
+
+
+                <button class="checkout-button" type="button" id="checkout-button">
+                    PROCEED TO CHECKOUT
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             Shopping Information
+        ========================== -->
+
+        <section class="cart-information">
+
+            <div class="cart-information-item">
+
+                <span>
+                    DELIVERY
+                </span>
+
+                <p>
+                    ご注文確定後、2〜4営業日以内に発送します。
+                </p>
+
+            </div>
+
+
+            <div class="cart-information-item">
+
+                <span>
+                    RETURNS
+                </span>
+
+                <p>
+                    商品到着後30日以内であれば返品を承ります。
+                </p>
+
+            </div>
+
+
+            <div class="cart-information-item">
+
+                <span>
+                    PAYMENT
+                </span>
+
+                <p>
+                    クレジットカード、その他の決済方法をご利用いただけます。
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         Footer
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            LUNÉ
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="products.html">
+                PRODUCTS
+            </a>
+
+            <a href="#">
+                ABOUT
+            </a>
+
+            <a href="#">
+                CONTACT
+            </a>
+
+            <a href="#">
+                PRIVACY POLICY
+            </a>
+
+        </div>
+
+
+        <p class="copyright">
+            © 2026 LUNÉ. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
